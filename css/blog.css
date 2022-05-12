@@ -178,6 +178,14 @@
 }
 
 
+/* --- Styling the INsta ----- */
+   .insta {
+    color: #833AB4;
+    font-style: italic;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
 
 
    /*  ---- RESPONSIVE DESIGN FOR lARGE SCREENS ------------------------------------------ */
