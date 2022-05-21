@@ -151,7 +151,7 @@ ul.nav li.current a {
 
     /*  ---- RESPONSIVE DESIGN FOR SMALL SCREENS ------------------------------------------ */
 
-@media(max-width: 600px) {
+@media(max-width: 390px) {
    .container {
    /* grid-template-columns: 1fr;
     width: 100%; */
@@ -207,6 +207,10 @@ ul.nav li.current a {
           font-family: 'Alice', serif;
           font-size: 1rem;}
 }
+
+/* FIXES FOR IPHONE 12, SPACING AND TITLE --------------*/
+
+  H2 {font-size: 50%;}
 
 
 

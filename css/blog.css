@@ -53,7 +53,7 @@
 
  /*  ---- RESPONSIVE DESIGN FOR SMALL SCREENS ------------------------------------------ */
 
- @media(max-width: 600px) {
+ @media(max-width: 390px) {
     .container {
      grid-template-columns: 1fr;
      grid-template-rows: repeat(5,0.2fr);
@@ -71,19 +71,24 @@
     .sidebar {grid-area: sidebar;
         display: flex;
         flex-direction: column;
-        align-items: center;}
+        align-items: center;
+        padding: 20px;
+        margin-top: 150px;
+        }
+
+  body > div.container > div.sidebar > div:nth-child(1) > img {width: 50%; height: 50%;}
 
     .header {grid-area: header;
         display: flex;
         flex-direction: column;
         align-items: center;}
         
-   .contents {                 padding: 20px;
+   .contents { padding: 20px;
                display: flex;
                flex-direction: column;
                align-items: center;
-               padding: 20px;
    }
+
  
    .card img {display: flex;
              max-width: 95%;
@@ -95,19 +100,20 @@
          flex-direction: column;
          align-items: center;
          padding: 10px;
-         max-width: 100%;}
- 
-
- 
+         min-width: 100%;}
  
    .footer img {text-align: center;
      width: 100%;
      max-width: 20%;}
  
-   h1 {font-size: 48px;}
+   h1 {font-size: 48px;
+      margin-top: -50px;}
+
+   .header h2 {font-size: 60px;}
  
  
-   .footer {text-align: center;
+   .footer {grid-area: footer;
+            text-align: center;
            background-color: #c5d1eb;
            padding: 1em;
            font-family: 'Alice', serif;
