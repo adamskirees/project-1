@@ -36,7 +36,7 @@
 
   .header { grid-area: header; /* HEADER STYLING -------------------------- */
   }
-  .header h2 {font-size: 3em;
+  .header h2 {font-size: 2em;
             text-align: center;}  
 
   .content {grid-area: content;
@@ -51,74 +51,7 @@
   .footer { grid-area: footer; }/* FOOTER STYLING -------------------------- */
 
 
- /*  ---- RESPONSIVE DESIGN FOR SMALL SCREENS ------------------------------------------ */
-
- @media(max-width: 390px) {
-    .container {
-     grid-template-columns: 1fr;
-     grid-template-rows: repeat(5,0.2fr);
-     grid-template-areas: 'nav' 'header''content''sidebar' 'footer';
-     min-height: 100vh;
-   }
  
-   .content{
-      grid-area: content;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .sidebar {grid-area: sidebar;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        margin-top: 150px;
-        }
-
-  body > div.container > div.sidebar > div:nth-child(1) > img {width: 50%; height: 50%;}
-
-    .header {grid-area: header;
-        display: flex;
-        flex-direction: column;
-        align-items: center;}
-        
-   .contents { padding: 20px;
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-   }
-
- 
-   .card img {display: flex;
-             max-width: 95%;
-             align-items: center;
-             min-height: 100%;}
- 
-   .card {margin-bottom: 30px;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         padding: 10px;
-         min-width: 100%;}
- 
-   .footer img {text-align: center;
-     width: 100%;
-     max-width: 20%;}
- 
-   h1 {font-size: 48px;
-      margin-top: -50px;}
-
-   .header h2 {font-size: 60px;}
- 
- 
-   .footer {grid-area: footer;
-            text-align: center;
-           background-color: #c5d1eb;
-           padding: 1em;
-           font-family: 'Alice', serif;
-           font-size: 1rem;}
- }
  
  /* -----STYLING THE BLOCKQUOTE-----*/
 
@@ -164,25 +97,6 @@
   opacity: 0.9;
 }
 
-@media (min-width: 850px) {
-  .quote-wrapper {
-    width: 370px;
-    height: 370px;
-  }
-
-  .quote-wrapper::before {
-    font-size: 300px;
-  }
-
-  .text p {
-    font-size: 26px;
-  }
-
-  .quote-wrapper blockquote footer {
-    bottom: 32px;
-  }
-}
-
 
 /* --- Styling the INsta ----- */
    .insta {
@@ -191,32 +105,8 @@
     font-size: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    }
-
-
-
+   
    /*  ---- RESPONSIVE DESIGN FOR lARGE SCREENS ------------------------------------------ */
-   @media(min-width: 1000px) {
-
-      
-        .card {
-          display: flex;
-          width: 100%;
-          padding: 10px;
-          height: auto;
-        }
-      
-        .card contents {padding: 30px;}
-      
-        .sidebar {margin-left: 10px;}
-      
-        .header {background-size: 110%;}
-      
-        .footer img {text-align: center;
-          width: 100%;
-          max-width: 10%;}
-        }
-
-  
-    
+   
 
 
